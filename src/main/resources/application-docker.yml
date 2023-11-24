@@ -16,10 +16,6 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${rds.username}
     password: ${rds.password}
-  sql:
-    init:
-      data-locations:
-        - classpath:db/data.sql
   jpa:
     # 2 테이블을 자동 생성하면 안된다. 직접 만들어야 한다.
     hibernate:
